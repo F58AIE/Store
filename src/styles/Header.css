@@ -1,0 +1,158 @@
+/* Base Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.header-logo h1 {
+  font-size: 1.6rem;
+  color: #e91e63;
+  font-weight: 600;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #e91e63;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+}
+
+.header-search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0.4rem;
+  width: 160px;
+}
+
+.header-search button {
+  border: none;
+  background: #e91e63;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-search button:hover {
+  background: #d81b60;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-actions a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-cart {
+  font-size: 1.4rem;
+}
+
+.btn-register {
+  background: #e91e63;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-register:hover {
+  background: #d81b60;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header-search input {
+    width: 120px;
+  }
+  .header-nav {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .header-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-nav {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-search {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .header-search input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .header-search button {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .btn-register {
+    padding: 0.3rem 0.6rem;
+  }
+}
