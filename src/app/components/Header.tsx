@@ -2,7 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "@/app/styles/Header.css"; // CSS
+import "../../styles/Header.css"; // اثنين ../../ للرجوع من components إلى src/styles
+
 
 export default function Header() {
   return (
